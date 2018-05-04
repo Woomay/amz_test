@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.nav{
+    width: 100%;
+    height:110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #c5c2c2;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav>div>a {
+    color:#333;
+}
+.nav>.navItem{
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav>.navMsg{
+    width:240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-indicators>li{
+    background-color: green;
+}
+.carousel-indicators>li.active{
+    background-color:orange;
+}
