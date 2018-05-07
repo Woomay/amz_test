@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+ul,ol,a{list-style: none;}
+.nav{
+    width: 100%;
+    height:110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #c5c2c2;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav>div>a {
+    color:#333;
+}
+.nav>.navItem{
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav>.navMsg{
+    width:240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .carousel-indicators>li{
+    background-color: green;
+}*/
+.carousel-indicators>li.active{
+    background-color:orange;
+}
+.show-grid{
+    margin-top:20px;
+}
+.free {
+    display: flex;
+    background-color: black;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    width:100%;
+}
+.freeStep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+.freeStep>ul{
+    height: 360px;
+    width: 100%;
+    font-size:18px;
+    display: flex;
+    flex-direction: column;
+}
+.freeStep>ul>li{
+    flex: 1;
+}
+.middle-search{
+    height: 180px;
+    /* border: 1px solid bisque; */
+}
+.middle-search-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:100%;
+}
+.middle-search-left>form{
+    width:350px;
+}
+.middle-search-left>.breadcrumb{
+    width: 350px;
+}
+.middle-search-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.middle-search-right>div{
+    width:258px;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    border:1px solid black
+}
+.col-md-4{
+    display: flex;
+    justify-content: cenetr;
+    align-items: center;
+    flex-direction: column;
+}
+.display-goods{
+    height: 400px;
+}
+.display-goods:hover{
+    border: 1px dashed #d8dadb;
+}
+.col-md-4>img{
+    width:320px;
+    height:270px;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cashback{
+    font-size: 18px;
+    font-weight: bold;
+    color:red;
+}
+
+/* login */
+.loginPage{
+    width: 500px; 
+}
