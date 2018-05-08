@@ -1,16 +1,15 @@
 import React from 'react'
 import MyNav from './Nav'
 import Form from 'react-bootstrap/lib/Form'
-import FormControl from 'react-bootstrap/lib/FormControl'
-import Col from 'react-bootstrap/lib/Col'
-import Row from 'react-bootstrap/lib/Row'
-import ControlLabel from 'react-bootstrap/lib/ControlLabel'
 import FormGroup from 'react-bootstrap/lib/FormGroup'
+import Col from 'react-bootstrap/lib/Col'
+import FormControl from 'react-bootstrap/lib/FormControl'
+import ControlLabel from 'react-bootstrap/lib/ControlLabel'
 import Button from 'react-bootstrap/lib/Button'
 import {Link} from 'react-router-dom'
 
 
-class Login extends React.Component {
+class Register extends React.Component{
     render() {
         return (
             <div className="container">
@@ -19,8 +18,8 @@ class Login extends React.Component {
                     <Form horizontal className="loginForm">
                         <FormGroup controlId="formHorizontalTitle">
                             <Col sm={12} style={{textAlign: 'center'}}>
-                                <h2>Login</h2>
-                                <div>Don't have a account yet? <Link to="/register">Register now for FREE!</Link></div>
+                                <h2>Rigister</h2>
+                                <div>Already have an account? <Link to="/login">Log in now!</Link></div>
                             </Col>
                         </FormGroup>
                         <FormGroup controlId="formHorizontalEmail">
@@ -39,13 +38,20 @@ class Login extends React.Component {
                                 <FormControl type="password" placeholder="Password" />
                             </Col>
                         </FormGroup>
-                        <FormGroup>
-                            <Col smOffset={2} sm={6}>
-                                <Button type="submit" bsStyle="primary">
-                                Login
-                                </Button>
+                        <FormGroup controlId="formHorizontalPassword">
+                            <Col componentClass={ControlLabel} sm={2}>
+                                Confirm
                             </Col>
-                            <Col sm={4}><a href="#">Forgot Password?</a></Col>        
+                            <Col sm={10}>
+                                <FormControl type="password" placeholder="Confirm Password" />
+                            </Col>
+                        </FormGroup>
+                        <FormGroup>
+                            <Col smOffset={2} sm={10}>
+                                <Button type="submit" bsStyle="primary">
+                                Register
+                                </Button>
+                            </Col>  
                         </FormGroup>
                     </Form>
                 </div>     
@@ -54,4 +60,5 @@ class Login extends React.Component {
     }
 }
 
-export default Login
+export default Register
+
