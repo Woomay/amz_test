@@ -39,11 +39,11 @@ class Order extends React.Component {
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row className="clearfix">
                     <Col sm={3}>
-                        <Nav bsStyle="pills" stacked>
+                        <Nav bsStyle="pills" style={{flexDirection: 'column',height: 280}}>
                             <NavItem eventKey="first">
                                 Pedding payment
                             </NavItem>
-                            {/*<NavItem eventKey="second">
+                            <NavItem eventKey="second">
                                 Pedding review
                             </NavItem>
                              <NavItem eventKey="three">
@@ -51,7 +51,7 @@ class Order extends React.Component {
                             </NavItem>
                             <NavItem eventKey="fourth">
                                 Complete
-                            </NavItem> */}
+                            </NavItem>
                         </Nav>
                     </Col>
                     <Col sm={9}>
@@ -150,10 +150,9 @@ class Order extends React.Component {
                     </Row>
                 </Tab.Container>
                 <Modal show={this.state.isShow} bsSize="large" onHide={this.handleClose}>
-                    <Modal.Header>
+                    <Modal.Header closeButton>
                         <Modal.Title style={{display: 'flex',justifyContent: 'space-between',alignItems: 'center'}}>
                             Please fill in follow message
-                            <span className="closeModal" onClick={this.handleClose}>×</span>
                         </Modal.Title>
                         <Modal.Body>
                             <Form horizontal>

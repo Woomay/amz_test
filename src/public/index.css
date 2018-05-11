@@ -41,7 +41,6 @@ ul,ol,a{list-style: none;}
 .free {
     display: flex;
     background-color: black;
-    color:#fff;
     justify-content: center;
     align-items: center;
     height: 56px;
@@ -49,6 +48,13 @@ ul,ol,a{list-style: none;}
     font-weight: bold;
     text-decoration: underline;
     width:100%;
+}
+.free > a{
+    color:#fff;
+}
+.free > a:hover{
+    color:#fff;
+    font-size: 24px;
 }
 .freeStep{
     display: flex;
@@ -109,6 +115,21 @@ ul,ol,a{list-style: none;}
 .display-goods:hover{
     border: 1px dashed #d8dadb;
 }
+.apply-for-free{
+    width:388px;
+    height:43px;
+    background-color: #fbdd7d;
+    display: none;
+    margin-top:-15px;
+    color: #fff;
+    font-size:18px;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+}
+.display-goods:hover>.apply-for-free{
+    display: block;
+}
 .col-md-4>img{
     width:320px;
     height:270px;
@@ -147,15 +168,59 @@ ul,ol,a{list-style: none;}
     width:100%;
     height:80px;
 }
-.closeModal{
-    font-size: 24px;
-    width: 25px;
-    height:25px;
-    cursor: pointer;
-    text-align: center;
-    line-height: 25px;
+#left-tabs-wallet-pane-first{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
 }
-.closeModal:hover{
-    border: 1px dashed red;
-    color: red;
+.left-bar{
+    display: flex;
+    flex-direction: column;
+}
+.wallet-side{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding:0;
+}
+.wallet-side>li{
+    height: 65px;
+    width: 100%;
+    margin-top:30px;
+}
+.wallet-side>li>a{
+    display: inline-block;
+    height:100%;
+    width:100%;
+    border: 2px solid #Face47;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 65px;
+}
+/* apply free */
+.show-step-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show-step-grid>.free-title{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.detail-price {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.next-button{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: flex-end;
 }

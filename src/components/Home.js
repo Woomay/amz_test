@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import LazyLoad from 'react-lazy-load'
 import Button from 'react-bootstrap/lib/Button'
 import NavItem from 'react-bootstrap/lib/NavItem'
 import NavDropdown from 'react-bootstrap/lib/NavDropdown'
@@ -13,6 +15,7 @@ import InputGroup from 'react-bootstrap/lib/InputGroup'
 import FormControl from 'react-bootstrap/lib/FormControl'
 import Breadcrumb from 'react-bootstrap/lib/Breadcrumb'
 import Glyphicon from 'react-bootstrap/lib/Glyphicon'
+import Pagination from 'react-bootstrap/lib/Pagination'
 import MyNav from './Nav'
 import banner1 from '../public/img/banner1.jpg'
 import lamp from '../public/img/lamp.jpg'
@@ -21,6 +24,16 @@ import chair from '../public/img/chair.jpg'
 
 
 class Home extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            activePage: 1
+        }
+        this.handleSelect = this.handleSelect.bind(this)
+    }
+    handleSelect(eventKey) {
+        this.setState({activePage: eventKey})
+    }
     render() {
         return (
             <div className="container" style={{padding:0}}>
@@ -53,7 +66,7 @@ class Home extends React.Component {
                             </Carousel>
                         </Col>
                         <Col xs={6} md={4} style={{padding: 0}}>
-                            <div className="free">How to get a free qualification?</div>
+                            <div className="free"><Link to="/apply-free">How to get a free qualification?</Link></div>
                             <div className="freeStep">
                                 <h3>Find it and get it!</h3>
                                 <ul>
@@ -92,54 +105,63 @@ class Home extends React.Component {
                             <p>Lamp</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free"><Link to="/detail/1">APPLY FOR FREE</Link></div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={tape} alt="tape" />
                             <p>Tape</p>
                             <p>price: <span className="price">$8</span></p>
-                            <p>cashback: <span className="cashback">100%</span></p>        
+                            <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>        
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                         <Col xs={6} md={4} className="display-goods">
                             <img src={chair} alt="chair" />
                             <p>Chair</p>
                             <p>price: <span className="price">$8</span></p>
                             <p>cashback: <span className="cashback">100%</span></p>
+                            <div className="apply-for-free">APPLY FOR FREE</div>
                         </Col>
                     </Row>
                 </Grid>   
