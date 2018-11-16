@@ -6,7 +6,7 @@ class News extends React.Component {
         return (
             <div className="container">
                 <MyNav />
-                news page
+                news pagesss
             </div>
         )
     }
