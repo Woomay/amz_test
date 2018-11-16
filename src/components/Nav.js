@@ -9,6 +9,7 @@ import Badge from 'react-bootstrap/lib/Badge'
 class MyNav extends React.Component {
     handleSelect = () => {
         console.info(this.eventKey)
+        //test something
     }
     render() {
         return (
