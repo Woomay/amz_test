@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import RouteMap from './routes/index'
 import registerServiceWorker from './registerServiceWorker';
 
+// master分支上面尽享更改并提交
 ReactDOM.render(
     <Provider>
         <RouteMap />
